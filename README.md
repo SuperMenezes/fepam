@@ -15,7 +15,11 @@ Antes de executar o projeto, é necessário instalar as seguintes bibliotecas Py
 
 Instale-as utilizando o comando abaixo:
 
+
+```python
 pip install selenium pypdf
+```
+
 
 
 ## Como utilizar
