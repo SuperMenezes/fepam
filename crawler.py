@@ -11,14 +11,13 @@ driver = webdriver.Chrome()
 # Abra o site alvo
 driver.get("https://ww3.fepam.rs.gov.br/licenciamento/area3/listaRazao.asp?area=3&buscar=2&tipoBusca=municipio&municipio=9999999&razao=&ramo=4751,30")
 
-file = open("crawl.txt", "w")
-
-file.write("RAZAO SOCIAL\tCPF/CNPJ\tENDERECO\tMUNICIPIO EMPREENDEDOR\tBAIRRO\tMUNICIPIO EMPREENDIMENTO\tULTIMA LICENCA\n")
-
 page = 1
 
 print("START")
 try:
+    file = open("crawl.txt", "w")
+    
+    file.write("RAZAO SOCIAL\tCPF/CNPJ\tENDERECO\tMUNICIPIO EMPREENDEDOR\tBAIRRO\tMUNICIPIO EMPREENDIMENTO\tULTIMA LICENCA\n")
 
     while True:
         time.sleep(3)
